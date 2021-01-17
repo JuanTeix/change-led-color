@@ -1,0 +1,117 @@
+<html>
+
+<head>
+	<title>Cambia de color tu led</title>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="./css/style.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" 
+	rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+</head>
+
+<body>
+	<header class="">
+		<nav class="navbar navbar-expand-lg navbar-light bg-dark ">
+			<div class="collapse navbar-collapse "id="navbarNav ">
+				<ul class="nav flex-grow-1">
+					<li class="nav-item text-white ms-2">
+						<h1>Desarrollado con </h1>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="https://getbootstrap.com/">
+							<img src="./img/bs.png" width="30" height="30" alt="Bootstrap">
+						  </a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="http://johnny-five.io/">
+							<img src="./img/j5.png" width="30" height="30" alt="Bootstrap">
+						  </a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="https://nodejs.org/es/">
+							<img src="./img/logo.svg" width="30" height="30" alt="Bootstrap">
+						  </a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="https://socket.io/">
+							<img src="./img/sio.jpg" width="30" height="30" alt="Bootstrap">
+						  </a>
+					</li>
+				</ul>
+
+				<button  class="p-2 me-4 border-0 bg-dark">
+                    <a class="BtnRedesLink  " href="https://www.paypal.com/donate?hosted_button_id=4EB3AKTJCL534" target="_blank"  > Invitame ☕️ </a>
+				</button>
+
+			</div>
+		</nav>
+	</header>
+
+	<main >
+		<div class="d-flex justify-content-center "  style="height: 100vh"> 
+			<div class="d-flex flex-column justify-content-center ">
+				<div class=" d-flex justify-content-center mb-5">
+					<p class="fs-1">Controla tu bombillo led con Arduino, Johnny-Five, Node.js, Socket.io</p>
+				</div>
+				<div class="d-flex  justify-content-center ">
+					<button type="button" id="btn_blue" type="button" class=" btn-lg btn-primary m-2 px-5 py-30" data-toggle="button" aria-pressed="false" >Azul</button>
+					<button type="button" id="btn_green" type="button" class=" btn-lg btn-success  m-2 px-5 py-30" data-toggle="button" aria-pressed="false">Verde</button>
+					<button type="button" id="btn_red" type="button" class=" btn-lg btn-danger  m-2 px-5 py-30" data-toggle="button" aria-pressed="false">Rojo</button>
+				</div>
+				<div class="d-flex  justify-content-center">
+					<button type="button"  id="btn_stop" type="button" class="btn-lg btn-light  m-2 px-5 py-30" data-toggle="button" aria-pressed="false">Blink</button>
+					<button type="button"  id="btn_off" type="button" class="btn-lg btn-light  m-2 px-5 py-30" data-toggle="button" aria-pressed="false">Led OFF</button>
+					<button type="button"  id="btn_on" type="button" class="btn-lg btn-light   m-2 px-5 py-30" data-toggle="button" aria-pressed="false">Led ON</button>				
+				</div>
+	
+				<div class="d-flex  justify-content-center">
+					<div class="range">
+						<label for="range" class="form-label center">Intensidad</label>
+					  	<input type="range" class="form-range" min="10" max="100" value="100" step="10" id="range"  />
+					  	<div class="input-group mb-3">
+							<span class="input-group-text" id="basic-addon1">%</span>
+							<input type="text" id="textInput" value="100"  class="form-control" placeholder="" aria-describedby="basic-addon1">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+
+	<footer class=" d-flex flex-column bg-dark p-2">
+		<div class="d-flex">
+            <div class=" flex-grow-1  p-2" >
+                <button  class="BtnRedes p-2 mr-2 bg-dark">
+                    <a class="BtnRedesLink icon-github" href="https://github.com/JuanTeix?tab=repositories" target="_blank"  ></a>
+                 </button>
+                 <button  class="BtnRedes p-2 mr-2 bg-dark">
+                    <a class="BtnRedesLink icon-twitter" href="https://twitter.com/juanteix" target="_blank"  ></a>
+                 </button>
+                 <button  class="BtnRedes p-2 mr-2 bg-dark">
+                    <a class="BtnRedesLink icon-instagram" href="https://www.instagram.com/juanteix" target="_blank"  ></a>
+				 </button>
+			</div> 
+
+			<div class="p-2">
+				<button  class="BtnRedes p-2 mr-2 bg-dark">
+                    <a class="BtnRedesLink  " href="https://www.paypal.com/donate?hosted_button_id=4EB3AKTJCL534" target="_blank"  > Donar ☕️</a>
+				</button>
+			</div>
+		</div>
+
+		<div class=" d-flex text-white justify-content-center  ">
+			<p>By Juan Teixeira</p>
+		</div>
+	</footer>
+	
+
+
+
+	<!-- Bootstrap  -->
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+	<!-- APP  -->
+	<script src="/socket.io/socket.io.js"></script>
+	<script src="./js/led.js"></script>
+</body>
+</html>
